@@ -1,8 +1,16 @@
 # Scriptify
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/scriptify`. To experiment with that code, run `bin/console` for an interactive prompt.
+Transforms a text/string into a reasonably accurate uppercase representation.
 
-TODO: Delete this and the text above, and describe your gem
+```ruby
+"hello".superscript
+```
+
+Results in:
+
+```ruby
+"ʰᵉˡˡᵒ"
+```
 
 ## Installation
 
@@ -22,7 +30,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class String
+  include Scriptify
+end
+```
+
+And then
+
+```ruby
+"abc".superscript
+```
+
+## Opts
+
+* **fallback_lower** - bool, default `false`, determines if we should try to get a lowercase
+  representation of that letter. Consider that lowercase superscripts are more common than uppercase
+* **replace_unknown** - char/bool, default `false`, determines what to replace unknown (i.e. not
+  found) characters with. If `falsey`, then the characters will be kept in the string. If you want to
+  remove not-found characters, simply pass an empty string
 
 ## Development
 

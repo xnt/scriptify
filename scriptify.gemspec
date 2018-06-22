@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "scriptify"
   spec.version       = Scriptify::VERSION
   spec.authors       = ["Vicente Plata"]
-  spec.email         = ["xientyto@gmail.com"]
+  spec.email         = ["vicente.plata@points.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Generates subscript and superscript versions of a string.}
+  #spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.homepage      = "https://github.com/xnt/scriptify."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
