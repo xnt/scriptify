@@ -1,6 +1,8 @@
 # Scriptify
 
 [![Build Status](https://travis-ci.org/xnt/scriptify.svg?branch=master)](https://travis-ci.org/xnt/scriptify)
+[![Gem Version](https://badge.fury.io/rb/scriptify.svg)](https://badge.fury.io/rb/scriptify)
+[![Maintainability](https://api.codeclimate.com/v1/badges/41a32a4fe69d448428fd/maintainability)](https://codeclimate.com/github/xnt/scriptify/maintainability)
 
 Transforms a text/string into a reasonably accurate uppercase representation.
 
