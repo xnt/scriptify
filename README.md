@@ -1,5 +1,7 @@
 # Scriptify
 
+[![Build Status](https://travis-ci.org/xnt/scriptify.svg?branch=master)](https://travis-ci.org/xnt/scriptify)
+
 Transforms a text/string into a reasonably accurate uppercase representation.
 
 ```ruby
