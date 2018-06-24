@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/xnt/scriptify.svg?branch=master)](https://travis-ci.org/xnt/scriptify)
 [![Gem Version](https://badge.fury.io/rb/scriptify.svg)](https://badge.fury.io/rb/scriptify)
 [![Maintainability](https://api.codeclimate.com/v1/badges/41a32a4fe69d448428fd/maintainability)](https://codeclimate.com/github/xnt/scriptify/maintainability)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
 Transforms a text/string into a reasonably accurate uppercase representation.
 
@@ -63,6 +65,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/xnt/scriptify. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 ## License
 
