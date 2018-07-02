@@ -49,7 +49,36 @@ class ScriptifyCatalog
     :z => 'ᶻ'
   }.freeze
 
+  @@SubScripts = {
+    :A => 'ₐ',
+    :E => 'ₑ',
+    :G => 'ᴳ',
+    :H => 'ᴴ',
+    :I => 'ᵢ',
+    :J => 'ⱼ',
+    :O => 'ₒ',
+    :R => 'ᵣ',
+    :U => 'ᵤ',
+    :V => 'ᵥ',
+    :X => 'ₓ',
+    :a => 'ₐ',
+    :e => 'ₑ',
+    :g => 'ᴳ',
+    :h => 'ᴴ',
+    :i => 'ᵢ',
+    :j => 'ⱼ',
+    :o => 'ₒ',
+    :r => 'ᵣ',
+    :u => 'ᵤ',
+    :v => 'ᵥ',
+    :x => 'ₓ'
+  }.freeze
+
   def self.superscripts
     @@SuperScripts
+  end
+
+  def self.subscripts
+    @@SubScripts
   end
 end

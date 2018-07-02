@@ -8,19 +8,27 @@ module Scriptify
   }
 
   def superscript(opts = {})
-    opts.merge(DEFAULT_OPTS)
-    superscripted = ""
-    self.to_s.split("").each do |c|
-      superscripted += char_superscript(c, opts)
-    end
-    superscripted
+    scriptify(ScriptifyCatalog.superscripts, opts)
+  end
+
+  def subscript(opts = {})
+    scriptify(ScriptifyCatalog.subscripts, opts)
   end
 
   private
-  def char_superscript(char, opts)
+  def scriptify(catalog, opts)
+    opts.merge(DEFAULT_OPTS)
+    scripted = ""
+    self.to_s.split("").each do |c|
+      scripted += char_script(catalog, c, opts)
+    end
+    scripted
+  end
+
+  def char_script(catalog, char, opts)
     sym = char.to_sym
-    return ScriptifyCatalog.superscripts[sym] if ScriptifyCatalog.superscripts.key?(sym)
-    return char_superscript(char.downcase, opts) if opts[:fallback_lower] && upcase?(char)
+    return catalog[sym] if catalog.key?(sym)
+    return char_script(catalog, char.downcase, opts) if opts[:fallback_lower] && upcase?(char)
     return opts[:replace_unknown] if opts[:replace_unknown]
     char
   end

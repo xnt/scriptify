@@ -11,6 +11,10 @@ RSpec.describe Scriptify do
     expect("hello".superscript).to eq("ʰᵉˡˡᵒ")
   end
 
+  it "subscripts simple sentences" do
+    expect("air".subscript).to eq("ₐᵢᵣ")
+  end
+
   it "fallbacks to lowercase if specified" do
     opts = {fallback_lower: true}
     expect("ABC".superscript(opts)).to eq("ᴬᴮᶜ")
