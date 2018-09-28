@@ -34,7 +34,11 @@ RSpec.describe Scriptify do
     expect("ABQ".superscript(opts)).to eq("ᴬᴮ")
   end
 
-  it "works fine with spaces" do
+  it "superscripts fine with spaces" do
     expect("A B B".superscript).to eq("ᴬ ᴮ ᴮ")
+  end
+
+  it "subscripts fine with spaces" do
+    expect("a i r".subscript).to eq("ₐ ᵢ ᵣ")
   end
 end
